@@ -1,0 +1,128 @@
+:focus {
+	outline: none !important;
+}
+
+#text-container{
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+	z-index:1000;
+	background:#fff;
+	padding:2px;
+}
+
+#type-text-size{
+	width:30px;
+}
+#text-container input{
+	background: transparent;
+    border: none;
+    font-size:15px;
+}
+
+#ruler-canvas {
+	position: absolute;
+    left: 0;
+}
+
+
+#draw-tool-canvas {
+	background:#FFF;
+	border:1px solid black;
+}
+
+#scale-ratio-display,#zoom-ratio-display {
+	position:absolute;
+	bottom:0px;
+	width:100px;
+	padding:3px;
+
+}
+
+#scale-ratio-display {
+	right:28px;
+	text-align:right;
+}
+
+#zoom-ratio-display{
+	left:30px;
+	text-align:left;
+}
+
+
+canvas {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+#draw-tool-canvas, #top-canvas{
+	position:absolute;
+	top:+30px;
+	left:+30px;
+	border:1px solid #000000;
+}
+
+#container {
+	position: relative;
+	margin-top: -10px;
+}
+
+#draw-tool-canvas { border: 1px solid #000; }
+
+
+#control-grid ul{
+	list-style-type:none;
+}
+
+#control-grid ul li{
+	display:inline-block;
+}
+
+#wrapper>div{
+	display:inline-block;
+	float:left;
+}
+
+#loadable_files li{
+	display:block !important;
+}
+
+@media print{
+	.noPrint {
+		display:none !important;
+	}
+
+	canvas {
+		border:none !important;
+	}
+}
+
+.zoom-control, .scale-control {
+	width:30px;
+	height:30px;
+}
+
+#switch-menu{
+	position:absolute;
+	display:none;
+	background: #fff;
+}
+
+.canvas-tooltip-span {
+	display:none;
+	z-index: 100;
+    position: fixed;
+}
+
+.tool-show {
+	display: block;
+	position:fixed;
+    overflow:hidden;
+}
+
+img#can-tool-image {
+    width: 36px;
+    height: auto;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/canvas.css"/>
+    <link rel="stylesheet" href="css/tool-bar.css"/>
+    <link rel="stylesheet" href="css/sidebar.css"/>
+    <script src="js/iro.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+    function welcome() {
+                swal({
+        title: "Welcome to Goal Analysis Tool!",
+        icon: "info",
+        text: 'If the grid doesn not load, please press reset canvas on top!',
+        button: "Get Started",
+        animation: false,
+        customClass: 'animated tada'
+        }).then (function(){
+        })};
+    </script>
+    <script>
+    function about() {
+                swal({
+        title: "About Goal Analysis Tool",
+        icon: "info",
+        text: 'Made for CCP1 Group 8 \nUses Icons from : https://www.flaticon.com/ ',
+        button: "Close",
+        animation: false,
+        customClass: 'animated tada'
+        }).then (function(){
+            //reload();
+        })};
+    </script>
+</head>
+<body onload="init(); welcome();">
+<!--Tool bar started-->
+<div id="top-menu">
+    <ul id="tool-items-ul">
+        <li class="tooltip">
+            <a href="javascript:void(0)" id="save-button">
+                <img class="image-item" src="img/tool-bar/save.png">
+            </a>
+            <span class="tooltiptext">Save</span>
+        </li>
+
+        <li class="tooltip" id="print-btn">
+            <a href="javascript:void(0)">
+                <img class="image-item" src="img/tool-bar/print.png">
+            </a>
+            <span class="tooltiptext">Print</span>
+        </li>
+
+        <li class="tooltip">
+            <a href="javascript:void(0);" id="open-button">
+                <img class="image-item" src="img/tool-bar/folder.png">
+            </a>
+            <span class="tooltiptext">Open</span>
+        </li>
+
+        <li class="tooltip">
+            <a href="javascript:void(0);" id="drag" onclick="about();">
+                <img class="image-item" src="img/tool-bar/info.png">
+            </a>
+            <span class="tooltiptext">About</span>
+        </li>
+
+        <li class="tooltip">
+            <a href="javascript:void(0);" id="zoom-in" class="zoom-control" data-action="zoom-in">
+                <img class="image-item" src="img/tool-bar/zoom-in.png">
+            </a>
+            <span class="tooltiptext">Zoom in</span>
+        </li>
+
+        <li class="tooltip">
+            <a href="javascript:void(0);" id="zoom-out" class="zoom-control" data-action="zoom-out">
+                <img class="image-item" src="img/tool-bar/zoom-out.png">
+            </a>
+            <span class="tooltiptext">Zoom out</span>
+        </li>
+        <li class="tooltip">
+            <a href="javascript:void(0);" id="zoom-reset" class="zoom-control" data-action="zoom-reset">
+                <img class="image-item" src="img/tool-bar/undo.png">
+            </a>
+            <span class="tooltiptext">Reset Canvas</span>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<!--Tool bar end-->
+<div id="wrapper">
+    <div id="container">
+    <!--side bar started-->
+    <div class="side-bar" id="menu-site-bar">
+        <div class="main-lab">    
+        </div>
+        <div id="d-area">
+            <div class="item-container">
+                <ul class="items-ul">
+                    <li>
+                        <div class="open">Elements/Actors
+                            <button type="button" id="e-btn" class="btn-min-image">+</button>
+                        </div>                
+                            <div class="d-items" id="e-item-div">
+                                <hr>
+                                <div id="element-container">            
+                                    <div>
+                                        <img src="img/left-menu/actor.png">
+                                    </div>      
+                                    <div>
+                                        <img src="img/left-menu/agent.png">                                        
+                                    </div>
+                                    <div>
+                                        <img src="img/left-menu/goal.png">
+                                    </div>  
+                                    <div>
+                                        <img src="img/left-menu/position.png">
+                                    </div>
+                                    <div>
+                                        <img src="img/left-menu/resource.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/role.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/softgoal.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/task.png">
+                                    </div> 
+                                </div>
+                            </div>                 
+                            <br>                        
+                    </li>
+                    <li>
+                        <div class="open">Links
+                            <button type="button" id="e-btn" class="btn-min-image">+</button>
+                        </div>
+                            <div class="d-items" id="e-item-div">
+                                <hr>
+                                <div id="element-container">            
+                                    <div>
+                                        <img src="img/left-menu/make.png">
+                                    </div>      
+                                    <div>
+                                        <img src="img/left-menu/break.png">                                        
+                                    </div>
+                                    <div>
+                                        <img src="img/left-menu/unknown.png">
+                                    </div>  
+                                    <div>
+                                        <img src="img/left-menu/somep.png">
+                                    </div>
+                                    <div>
+                                        <img src="img/left-menu/somem.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/and.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/help.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/hurt.png">
+                                    </div> 
+                                    <div>
+                                        <img src="img/left-menu/or.png">
+                                    </div> 
+                                </div>
+                            </div> 
+                            <br> 
+                    </li>
+                    <li>
+                        <div class="open">Color Picker
+                        </div> 
+                        <hr>                                                                  
+                            <div id="color-picker-container">
+                                <script> var demoColorPicker = new iro.ColorPicker("#color-picker-container", {width: 200, height: 200}); </script>
+                            </div>                                                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--side bar ended-->
+        <canvas id="ruler-canvas"></canvas>
+        <canvas id="draw-tool-canvas"></canvas>
+    </div>  
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/scale.js"></script>
+<script type="text/javascript" src="js/sidebar.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+</body>
+<footer>
+</footer>
+</html>

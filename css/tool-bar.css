@@ -1,0 +1,55 @@
+#top-menu{
+    display: block;
+}
+#tool-items-ul {
+    list-style-type: none;
+    height: 20px;
+    margin-left: -24px;
+    margin-top: 8px;
+}
+
+#tool-items-ul > li {
+    float: left;
+    /*padding-right: 12px;*/
+}
+
+#tool-items-ul > li > a {
+    display: inline-block;
+    padding: 2px;
+    text-decoration: none;
+    width: 40px;
+}
+
+.image-item {
+    width: 20px;
+    height: 25px;
+}
+
+/* tool tip*/
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 0px;
+    padding: 5px 0;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

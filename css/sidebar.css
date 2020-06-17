@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.d-container {
+    margin-top: -16px !important;
+}
+.tool-bar {
+    background-color: #e7e7e7;
+    height: 46px;
+    cursor: auto;
+}
+.tool-items-ul {
+    padding: 10px;
+}
+.tool-items-ul li {
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+}
+.imagitem {
+    width: 24px;
+}
+.side-bar {
+    border: solid 2px #000;
+    float: left;
+    background: rgba(53, 94, 122, 0.86);
+    height: auto;
+    width: 300px;
+    margin: 47px;
+    box-shadow: #000 1px 1px 9px;
+    z-index: 37;
+    cursor: auto;
+    position: relative;
+}
+.detail {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    pointer-events: none;
+}
+.btn-min-image {
+    float: right;
+    color: #ffffff;
+    font-size: 20px;
+    background: #355e7a;
+    width: 29px;
+    text-decoration: none;
+    border:0;
+}
+
+.btn-min-image:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
+.btn-min-search {
+    float: right;
+    color: #ffffff;
+    font-size: 16px;
+    background: #355e7a;
+    width: 41px;
+    text-decoration: none;
+    border: solid 1px #FFF;
+}
+
+.btn-min-mini {
+    float: right;
+    color: #b2b2b2;
+    font-size: 38px;
+    background: #355e7a;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    height: 0;
+    margin-top: 14px !important;
+}
+
+.btn-min-image img {
+    width: 9px;
+}
+
+.items-ul li {
+    list-style: none;
+    color: #5a5757;
+    margin-left: -40px !important;
+}
+
+.open {
+    background-color: #FFFFFF !important;
+    padding: 10px;
+}
+
+.open {
+    font-weight: 600;
+}
+
+.open span {
+    font-weight: 500 !important;
+}
+
+.close {
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+.single-item {
+    padding: 1px;
+    color: #000000;
+    height: 88px;
+    /*margin-bottom: 5px;*/
+    margin-bottom: 13px;
+
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+
+}
+.single-item img {
+    width: 56px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    background: #fff;
+    height: 62px;
+    padding: 18px;
+}
+.s-i-d {
+    padding: 5px;
+    padding-right: 2px;
+    margin-left: 0 !important;
+}
+.s-i-p {
+    width: 63px !important;
+    padding: 5px;
+}
+.s-i-d, .s-i-p {
+    float: right;
+    width: 90px;
+    color: #FFF;
+    background-color: rgba(255, 254, 254, 0.37);
+    margin: 2px;
+    height: 88px;
+}
+
+.s-i-d span, .s-i-p span {
+    font-size: 13px;
+}
+
+.set-red {
+    color: #ff8d00;
+    font-size: 17px !important;
+}
+
+.d-items {
+    display: none;
+}
+
+.ht-horz {
+    margin: 0px;
+    box-shadow: #ccc 1px 0px 3px;
+}
+
+.v-line {
+    width: 1px;
+    height: 100%;
+}
+
+.property-div {
+    background: #f3f3f3;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+td {
+    border:solid 1px #b2b2b2;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+tbody {
+    min-height: 200px;
+    overflow-y: scroll;
+}
+
+.item-container {
+    min-height: 261px;
+}
+
+.d-title {
+    margin-top: 8px;
+    width: 50%;
+    float: left;
+}
+
+.d-values {
+    width: 66px;
+    float: left;
+    margin-top: 8px;
+}
+
+.d-values span {
+    font-weight: 600;
+}
+.property-div table thead {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
+    background: #fcfff4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcfff4 0%, #e9e9ce 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fcfff4 0%,#e9e9ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
+
+}
+
+.pro-logo {
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    pointer-events: none;
+}
+
+.main-lab button {
+    margin: 30px;
+}
+.search-div {
+    padding: 15px;
+    color: #fff;
+}
+.search-input {
+    width: 200px;
+    /* border-radius: 12px; */
+    height: 19px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 100;
+    bottom: -170%;
+    left: 60%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.success-message {
+    background-color: #50748c;
+    z-index: 1000;
+    bottom: 52px;
+    right: 50px;
+    width: auto;
+    padding: 15px;
+    position: absolute;
+    box-shadow: #101010 1px 1px 3px;
+    border-radius: 39px;
+    color: #fff;
+    display: none;
+}
+/*popup bulb*/
+.bulb-pop {
+    width: 400px;
+    background: #FFF;
+    z-index: 1000;
+    position: absolute;
+    height: 320px;
+    left: 40%;
+    top: 20%;
+    padding: 11px;
+    box-shadow: #ccc 0px 0px 16px;
+    border: solid 1px rgba(53, 94, 122, 0.86);
+    display: none;
+}
+
+.bulb-pop .header {
+    margin-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+}
+
+.bulb-pop .body {
+    min-height: 200px;
+}
+
+.bulb-pop .footer {
+    border-top: #ccc solid 1px;
+}
+.btn-close {
+    float: right;
+    margin-top: -42px;
+}
+.form-label {
+    float: left;
+    width: 140px;
+}
+.input-container {
+    margin-bottom: 10px;
+}
+.input-container input {
+    width: 250px;
+}
+.f-buttons {
+    float: right;
+    margin-top: 5px;
+}
+/*popup switch*/
+.switch-pop {
+    width: 680px;
+    background: #FFF;
+    z-index: 1000;
+    position: absolute;
+    height: 366px;
+    left: 34%;
+    top: 20%;
+    padding: 11px;
+    box-shadow: #ccc 0px 0px 16px;
+    border: solid 1px rgba(53, 94, 122, 0.86);
+    display: none;
+}
+.input-container select {
+    width: 250px;
+}
+
+.one-half {
+    /*border: solid 1px #b2b2b2;*/
+    padding: 10px;
+    width: 244px;
+    margin-top: -288px;
+    float: left;
+    margin-left: 411px;
+    height: 131px;
+}
+
+.one-half li {
+    list-style: none;
+    padding: 5px;
+    color: #000;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+    border: solid 1px #ccc;
+    margin-bottom: 2px;
+}
+
+.btn-info {
+    background: #FFF;
+    border: solid 1px #50748c;
+    padding: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-shadow: #ccc 1px 1px 1px;
+}
+
+.btn-error {
+    background: #FFF;
+    border: solid 1px #e90c0c;
+    padding: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-shadow: #ccc 1px 1px 1px;
+}
+
+.sale-cont {
+    padding: 5px 43px 5px 73px;
+}
+
+#text-container{
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:none;
+    z-index:1000;
+    background:#fff;
+    padding:2px;
+}
+
+#type-text-size{
+    width:30px;
+}
+#text-container input{
+    background: transparent;
+    border: none;
+    font-size:15px;
+}
+
+@-moz-document url-prefix() {
+    .single-item {
+        margin-bottom: 25px;
+    }
+
+    .s-i-d, .s-i-p {
+        height: 88px;
+    }
+}
+
+#element-container{
+    height: 166px;
+    overflow: scroll;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#element-container::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
